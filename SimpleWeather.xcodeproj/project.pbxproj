@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4BF82A642356473400CC79B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF82A632356473400CC79B8 /* AppDelegate.swift */; };
 		4BF82A662356473400CC79B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF82A652356473400CC79B8 /* SceneDelegate.swift */; };
-		4BF82A682356473400CC79B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF82A672356473400CC79B8 /* ViewController.swift */; };
+		4BF82A682356473400CC79B8 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF82A672356473400CC79B8 /* WeatherViewController.swift */; };
 		4BF82A6B2356473400CC79B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF82A692356473400CC79B8 /* Main.storyboard */; };
 		4BF82A6D2356473500CC79B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF82A6C2356473500CC79B8 /* Assets.xcassets */; };
 		4BF82A702356473500CC79B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF82A6E2356473500CC79B8 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		4BF82A602356473400CC79B8 /* SimpleWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF82A632356473400CC79B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BF82A652356473400CC79B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4BF82A672356473400CC79B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4BF82A672356473400CC79B8 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		4BF82A6A2356473400CC79B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4BF82A6C2356473500CC79B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BF82A6F2356473500CC79B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,13 +58,37 @@
 			children = (
 				4BF82A632356473400CC79B8 /* AppDelegate.swift */,
 				4BF82A652356473400CC79B8 /* SceneDelegate.swift */,
-				4BF82A672356473400CC79B8 /* ViewController.swift */,
-				4BF82A692356473400CC79B8 /* Main.storyboard */,
+				4BF82A792356477100CC79B8 /* Model */,
+				4BF82A782356476400CC79B8 /* View */,
+				4BF82A772356474400CC79B8 /* Controller */,
 				4BF82A6C2356473500CC79B8 /* Assets.xcassets */,
 				4BF82A6E2356473500CC79B8 /* LaunchScreen.storyboard */,
 				4BF82A712356473500CC79B8 /* Info.plist */,
 			);
 			path = SimpleWeather;
+			sourceTree = "<group>";
+		};
+		4BF82A772356474400CC79B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4BF82A672356473400CC79B8 /* WeatherViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4BF82A782356476400CC79B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4BF82A692356473400CC79B8 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4BF82A792356477100CC79B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BF82A682356473400CC79B8 /* ViewController.swift in Sources */,
+				4BF82A682356473400CC79B8 /* WeatherViewController.swift in Sources */,
 				4BF82A642356473400CC79B8 /* AppDelegate.swift in Sources */,
 				4BF82A662356473400CC79B8 /* SceneDelegate.swift in Sources */,
 			);
